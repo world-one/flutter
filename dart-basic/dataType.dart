@@ -65,6 +65,7 @@ void main() {
   // key value 구조의 데이터를 생성할 때 class로 하는걸 추천(nico)
 
   //set
+  // 내부의 값들은 유니크하다.
   var nums = {
     1,
     2,
@@ -72,4 +73,8 @@ void main() {
     4,
     5,
   };
+  nums.add(1);
+  print(nums);
+  // 1이 추가되지 않음.
+  // javascript set, python tuple과 동일
 }
