@@ -62,6 +62,9 @@ void main() {
     [1, 2, 3]: true,
   };
 
+  print(player3[[1, 4, 5]]);
+  print(player3[[1, 2, 3]]);
+
   // key value 구조의 데이터를 생성할 때 class로 하는걸 추천(nico)
 
   //set

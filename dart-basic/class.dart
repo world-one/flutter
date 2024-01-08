@@ -163,3 +163,47 @@ class Player5 {
 abstract class Human {
   void walk();
 }
+
+class H extends Human {
+  @override
+  void walk() {
+    // TODO: implement walk
+  }
+}
+
+//Inheritance
+class Human2 {
+  final String name;
+  Human2({required this.name});
+
+  void sayHello() {
+    print('hell, $name');
+  }
+}
+
+class P extends Human2 {
+  final Team team;
+
+  P({
+    required Team this.team,
+    required String name,
+  }) : super(name: name);
+
+  @override
+  void sayHello() {
+    super.sayHello();
+    print('my team $team');
+  }
+}
+
+mixin Strong {
+  final double level = 15.99;
+}
+
+mixin QuickRun {
+  void run() {
+    print('run');
+  }
+}
+
+class P2 with Strong, QuickRun {}
